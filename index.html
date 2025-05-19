@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Pessoal</title>
+
+
+  <style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+    .divheader{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align:center;
+
+    }
+    .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    flex-wrap: wrap; /* Para não quebrar em telas pequenas */
+    }
+
+    .foto-perfil {
+      width: 175px;
+      height: 175px;
+      object-fit: cover;
+      border-radius: 50%; /* Deixa a imagem redonda */
+      border: 3px solid gold; /* Borda dourada */
+    }
+
+    body {
+      background-color: #050d30;
+      color: aliceblue;
+      font-size: 24px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      padding-top: 50px;  /* ajusta conforme a altura do nav */
+    }
+    nav {
+      background-color: #6e750c;
+      padding: 5px;
+      position: fixed;    /* fixa o menu */
+      width: 100%;        /* ocupa toda a largura */
+      top: 0;
+      left: 0;
+      z-index: 1000;      /* fica sobre outros elementos */
+      
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    nav ul li {
+      margin: 0;
+      
+    }
+
+    nav ul li a {
+      color: aliceblue;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 20px;
+    }
+
+    nav ul li a:hover {
+    background-color: #c1a200;
+    color: #050d30;
+    }
+
+
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #444;
+       padding: 60px 20px;
+      min-height: 100px;
+      padding: 25px;
+        scroll-margin-top: 60px; /* ou o tamanho do nav + um pouco */
+    }    
+
+   a {
+    color: gold;
+  }
+  a:hover {
+  color: goldenrod;
+  }
+   
+ /* Cores específicas por seção */
+    #quem-sou {
+      background-color: #447fd8;
+      text-align: justify;
+    }
+
+    #formacao {
+      background-color: #1a3e6b;
+      text-align: justify;
+    }
+
+    #producao {
+      background-color: #24507f;
+      text-align: justify;
+    }
+
+    #contato {
+      background-color: #2e6394;
+      text-align: justify;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<header class="divheader">
+  <div class="header-content">
+    <img src="imagens/Eu.png" alt="Foto de Marcela de Angelis" class="foto-perfil" />
+    <div>
+      <h1>Marcela de Angelis</h1>
+      <p>Fisioterapeuta · Neuroengenheira
+        <br> · Doutoranda em Bioinformática · Graduanda em Ciência de Dados</p>
+    </div>
+  </div>
+</header>
+<nav>
+  
+    <ul>
+      <li><a href="#quem-sou">Quem sou</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#producao">Produções</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+ 
+</nav>
+
+
+
+<!-- Seções -->
+  <section id="quem-sou">
+    <h2>Quem sou</h2>
+    <p>
+      Soteropolitana orgulhosa, atuo na interface entre saúde e tecnologia, com foco em inovação para 
+      qualidade de vida e diagnóstico. Sou encantada pela busca do conhecimento que une fronteiras, assim como pela vida ao ar livre e
+      próxima ao mar. Você pode saber mais sobre minhas atividades recreativas no <a href="https://www.instagram.com/marcela_de_angelis_ssa/?hl=pt-br" target="_blank">Instagram.</a>
+  </p>
+  </section>
+
+  <section id="formacao">
+    <h2>Formação</h2>
+    <p>
+      Para alcançar meu propósito, optei por diversificar o meu conhecimento por meio da educação continuada. Inciei a vida universitária com o curso de Bacharel em Fisioterapia 
+      e atualizei meu conhecimento com importantes especializações(Reabilitação Neurofuncional e em Oncologia). 
+      Novas e enriquecedoras habilidades foram e estão sendo adquiridas com as áreas da Neuroengenharia e da Bioinformática e, 
+      recentemente com a Ciência de Dados. Para mais informações acesse <a href="http://lattes.cnpq.br/0658196592494776" target="_blank">Plataforma Lattes.</a>
+    </p>
+  </section>
+
+  <section id="producao">
+    <h2>Produções</h2>
+    <p>
+      Além da Plataforma Lattes, minha participação em eventos científicos em ambas as áreas, assim como algumas produções 
+      desenvolvidas ao longo do tempo podem ser acessados no meu perfil no <a href="https://github.com/Angelis2021" target="_blank">Github.</a>.
+      Aqui você terá acesso por exemplo a minha primeira landing page desenvolvida durante um evento de treinamento organizado pelo Hiring Coders e
+      também ao produto gerado no meu último treinamento organizado pela Nextflow. A Nextflow é um sistema de fluxo de trabalho científico usado principalmente
+      para análise de dados de bioinformática. 
+    </p>
+  </section>
+
+<section id="contato" style="text-align: center; padding: 40px;">
+  <h2 style="font-size: 24px;">Contato</h2>
+  
+  <!-- ÍCONES -->
+  <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 20px; margin-bottom: 30px;">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/marcela-de-angelis/" target="_blank" title="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="gold" viewBox="0 0 24 24">
+        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 
+        1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM7.5 
+        8h3.5v2.6h.05c.49-.93 1.68-1.9 3.45-1.9C19.3 8.7 20 
+        11.1 20 14.4V24h-4v-8.2c0-2-.03-4.6-3-4.6s-3.4 2.2-3.4 
+        4.5V24h-4V8z"/>
+      </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/marcela_de_angelis_ssa/?hl=pt-br" target="_blank" title="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="gold" viewBox="0 0 24 24">
+        <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.5.6.2 
+        1 .5 1.4.9.4.4.7.9.9 1.4.2.5.4 1.3.5 2.5.1 1.3.1 
+        1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.5-.2.6-.5 
+        1-.9 1.4-.4.4-.9.7-1.4.9-.5.2-1.3.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 
+        0-4.9-.1c-1.2-.1-2-.3-2.5-.5-.6-.2-1-.5-1.4-.9-.4-.4-.7-.9-.9-1.4-.2-.5-.4-1.3-.5-2.5C2.2 
+        15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.5.2-.6.5-1 
+        .9-1.4.4-.4.9-.7 1.4-.9.5-.2 1.3-.4 2.5-.5C8.4 2.2 
+        8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.3-2.1.5-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 
+        1.1-.2.4-.4 1-.5 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 
+        4.7c.1 1.1.3 1.7.5 2.1.2.5.4.8.7 1.1.3.3.6.5 1.1.7.4.2 1 
+        .4 2.1.5 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.3 
+        2.1-.5.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.2-.4.4-1 
+        .5-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.3-1.7-.5-2.1-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.4-.2-1-.4-2.1-.5-1.2-.1-1.6-.1-4.7-.1zM12 
+        6.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 1.8a3.7 3.7 0 1 0 0 
+        7.4 3.7 3.7 0 0 0 0-7.4zm5.6-2.2a1.3 1.3 0 1 1-2.6 
+        0 1.3 1.3 0 0 1 2.6 0z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- FORMULÁRIO -->
+  <form action="https://formsubmit.co/marceladeangelis1@gmail.com" method="POST" style="max-width: 500px; margin: 0 auto; text-align: left;">
+    <input type="hidden" name="_captcha" value="false">
+    
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="5" required style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea><br>
+
+    <button type="submit" style="padding: 10px 20px; background-color: gold; border: none; color: black; font-weight: bold; cursor: pointer;">Enviar</button>
+  </form>
+</section>
+
+
+
+</body>
+</html>
